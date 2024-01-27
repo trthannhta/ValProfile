@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .All {
+            background-color: black;
+            color: white;
+            display: flex;
+            height: 100vh;
+            padding: 20px;
+            gap: 12px
+        }
+
+        .Left {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .cardleft1 {
+            border-radius: 7px;
+            background-color: rgb(25 26 31);
+            flex: 2
+        }
+
+        .button {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ovr {
+            font-size: large;
+            border-radius: 7px;
+            background-color: rgb(39 40 45);
+            width: 100px;
+            padding: 20px;
+            margin: 20px 10px 1px 10px;
+            text-align: center;
+
+        }
+
+        .season {
+            font-size: large;
+            border-radius: 5px;
+            background-color: rgb(39 40 45);
+            width: 500px;
+            padding: 20px;
+            margin: 20px 10px 1px 0px;
+            text-align: center;
+        }
+
+        .rank {
+            align-items: center;
+            display: flex;
+            justify-content: start;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Plat {
+            margin: 20px;
+            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+
+        }
+
+        .plat_info {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .Rank-elements {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+
+        }
+
+        .plat-name {
+            font-weight: bold;
+            padding: 10px;
+            margin: 5px;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cardleft2 {
+            border-radius: 7px;
+            background-color: rgb(25 26 31);
+            flex: 1
+        }
+
+        .align-center {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .statics-group {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px
+        }
+
+        .pie {
+            width: 115px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .Right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 7;
+        }
+
+        .cardright1 {
+            display: flex;
+            border-radius: 7px;
+            background-color: rgb(25 26 31);
+            flex: 1;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .in4-right {
+            gap: 40px;
+            flex: 6
+        }
+
+        .history-match {
+            display: flex;
+            gap: 40px;
+        }
+
+        .ruler {
+            display: flex;
+            height: 8px;
+            margin-top: 20px;
+        }
+
+        .red {
+            background-color: red;
+            flex: 7
+        }
+
+        .blue {
+            background-color: blue;
+            flex: 3;
+        }
+
+        .group_character {
+            display: flex;
+            gap: 20px;
+            flex: 4;
+
+        }
+
+        .high {
+            color: greenyellow;
+        }
+
+        .low {
+            color: red;
+        }
+
+        .anh {
+            height: 50px;
+            width: 50px;
+        }
+
+        .cardright2 {
+            display: flex;
+            border-radius: 7px;
+            background-color: rgb(25 26 31);
+            flex: 6;
+            padding: 20px;
+            gap:64px;
+            flex-direction: column;
+        }
+
+        .recent-match {
+            display: flex;
+        }
+
+        .rm {
+            display: flex;
+            gap:16px;
+            flex:3
+        }
+
+        .img-rm {
+            height: 70px;
+            width: 70px;
+        }
+
+        .status {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .feature {
+            flex: 7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="All">
+        <div class="Left">
+            <div class="cardleft1">
+                <div class="button">
+                    <div class="ovr">Overall</div>
+                    <div class="season">Season-1</div>
+                </div>
+                <div class="rank">
+                    <img class="Plat" src="https://cdn3.emoji.gg/emojis/4590-valorant-platinum-1.png" alt="platinum 1">
+                    <div>
+                        <h1>Platinum 1</h1>
+                        <div class="plat_info">
+                            <p> 7W 5L </p>
+                            <p>58.3%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Rank-elements">
+                    <div class="plat-name">
+                        <p>Kills/Death</p>
+                        <p>1.00</p>
+                    </div>
+                    <div class="plat-name">
+                        <p>HS</p>
+                        <p>16.7%</p>
+                    </div>
+                    <div class="plat-name">
+                        <p>Round Win</p>
+                        <p>51%</p>
+                    </div>
+                    <div class="plat-name">
+                        <p>Damage/Round</p>
+                        <p>150.1</p>
+                    </div>
+                    <div class="plat-name">
+                        <p>KD Ratio</p>
+                        <p>1.02</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardleft2">
+                <div class="align-center">
+                    <h3>AVG.SHOTS% - LAST 30 GAME</h3>
+                </div>
+                <div class="statics-group">
+                    <img class="pie" src="../png/pie-removebg-preview.png" alt="pie">
+                    <div class="stats">
+                        <div>
+                            <span style="color: palevioletred;">18.3%</span>
+                            <span><b>Head</b></span>
+                        </div>
+                        <div>
+                            <span style="color: orange;">75.7%</span>
+                            <span><b>Body</b></span>
+                        </div>
+                        <div>
+                            <span>5.9%</span>
+                            <span><b>Legs</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Right">
+            <div class="cardright1">
+                <div class="in4-right">
+                    <div class="history-match">
+                        <div>
+                            <p>11W 9L</p>
+                            <p>Last 20</p>
+                        </div>
+                        <div>
+                            <p>51.4%</p>
+                            <p>Winrate</p>
+                        </div>
+                        <div>
+                            <p>1.01</p>
+                            <p>KD</p>
+                        </div>
+                        <div>
+                            <p>322.2</p>
+                            <p>Average Score</p>
+                        </div>
+                    </div>
+                    <div class="ruler">
+                        <div class="red"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+                <div class="group_character">
+                    <div>
+                        <img class="anh"
+                            src="https://imgsvc.trackercdn.com/url/max-width(60),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2Fa3bfb853-43b2-7238-a4f1-ad90e9e46bcc%2Fdisplayicon.png/image.png"
+                            alt="reyna">
+                        <p class="green">100%</p>
+                    </div>
+                    <div>
+                        <img class="anh"
+                            src="https://imgsvc.trackercdn.com/url/max-width(72),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2F22697a3d-45bf-8dd7-4fec-84a9e28c69d7%2Fdisplayicon.png/image.png"
+                            alt="chamber">
+                        <p class="high">100%</p>
+                    </div>
+                    <div>
+                        <img class="anh"
+                            src="https://imgsvc.trackercdn.com/url/max-width(60),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2Ff94c3b30-42be-e959-889c-5aa313dba261%2Fdisplayicon.png/image.png"
+                            alt="raze">
+                        <p class="low">100%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardright2">
+                <div class="recent-match">
+                    <div class="rm">
+                        <img class="img-rm"
+                            src="https://imgsvc.trackercdn.com/url/max-width(72),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2F22697a3d-45bf-8dd7-4fec-84a9e28c69d7%2Fdisplayicon.png/image.png"
+                            alt="chamber">
+                        <div class="status">
+                            <h1>Defeat</h1>
+                            <p>9-13</p>
+                        </div>
+                        
+                    </div>
+                    <div class="feature">
+                        <div class="in4-right">
+                            <div class="history-match">
+                                <div>
+                                    <p>17</p>
+                                    <p>Total</p>
+                                </div>
+                                <div>
+                                    <p>51.4%</p>
+                                    <p>Winrate</p>
+                                </div>
+                                <div>
+                                    <p>1.01</p>
+                                    <p>KD</p>
+                                </div>
+                                <div>
+                                    <p>322.2</p>
+                                    <p>Average Score</p>
+                                </div>
+                            </div>
+                            <div class="ruler">
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-match">
+                    <div class="rm">
+                        <img class="img-rm"
+                            src="https://imgsvc.trackercdn.com/url/max-width(72),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2Fa3bfb853-43b2-7238-a4f1-ad90e9e46bcc%2Fdisplayicon.png/image.png"
+                            alt="reyna">
+                        <div class="status">
+                            <h1>Victory</h1>
+                            <p>13-7</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="in4-right">
+                            <div class="history-match">
+                                <div>
+                                    <p>14</p>
+                                    <p>Total</p>
+                                </div>
+                                <div>
+                                    <p>51.4%</p>
+                                    <p>Winrate</p>
+                                </div>
+                                <div>
+                                    <p>1.01</p>
+                                    <p>KD</p>
+                                </div>
+                                <div>
+                                    <p>322.2</p>
+                                    <p>Average Score</p>
+                                </div>
+                            </div>
+                            <div class="ruler">
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-match">
+                    <div class="rm">
+                        <img class="img-rm"
+                            src="https://imgsvc.trackercdn.com/url/max-width(72),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2F22697a3d-45bf-8dd7-4fec-84a9e28c69d7%2Fdisplayicon.png/image.png"
+                            alt="chamber">
+                        <div class="status">
+                            <h1>Defeat</h1>
+                            <p>9-13</p>
+                        </div>
+                        
+                    </div>
+                    <div class="feature">
+                        <div class="in4-right">
+                            <div class="history-match">
+                                <div>
+                                    <p>11</p>
+                                    <p>Total</p>
+                                </div>
+                                <div>
+                                    <p>51.4%</p>
+                                    <p>Winrate</p>
+                                </div>
+                                <div>
+                                    <p>1.01</p>
+                                    <p>KD</p>
+                                </div>
+                                <div>
+                                    <p>322.2</p>
+                                    <p>Average Score</p>
+                                </div>
+                            </div>
+                            <div class="ruler">
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-match">
+                    <div class="rm">
+                        <img class="img-rm"
+                            src="https://imgsvc.trackercdn.com/url/max-width(72),quality(66)/https%3A%2F%2Ftitles.trackercdn.com%2Fvalorant-api%2Fagents%2Fa3bfb853-43b2-7238-a4f1-ad90e9e46bcc%2Fdisplayicon.png/image.png"
+                            alt="reyna">
+                        <div class="status">
+                            <h1>Victory</h1>
+                            <p>13-0</p>
+                        </div>
+                        
+                    </div>
+                    <div class="feature">
+                        <div class="in4-right">
+                            <div class="history-match">
+                                <div>
+                                    <p>29</p>
+                                    <p>Total</p>
+                                </div>
+                                <div>
+                                    <p>51.4%</p>
+                                    <p>Winrate</p>
+                                </div>
+                                <div>
+                                    <p>1.01</p>
+                                    <p>KD</p>
+                                </div>
+                                <div>
+                                    <p>322.2</p>
+                                    <p>Average Score</p>
+                                </div>
+                            </div>
+                            <div class="ruler">
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
